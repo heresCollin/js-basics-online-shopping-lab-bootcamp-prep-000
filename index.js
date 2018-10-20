@@ -53,10 +53,10 @@ function removeFromCart(item) {
       newCart = [...newCart,cart[i]];
     }
   }
-  if (newCart == cart) {
+  if (newCart === cart) {
     return "That item is not in your cart.";
   } else {
-  cart = newCart;
+    cart = newCart;
   }
 }
 

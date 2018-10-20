@@ -48,7 +48,7 @@ function removeFromCart(item) {
   // write your code here
   var newCart = [];
   for (var i = 0; i < cart.length; i ++){
-    currentItem = cart[i].itemName;
+    var currentItem = cart[i].itemName;
     if (currentItem != item) {
       newCart.concat(cart[i]);
     }

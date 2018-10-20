@@ -50,7 +50,7 @@ function removeFromCart(item) {
   for (var i = 0; i < cart.length; i ++){
     var currentItem = cart[i].itemName;
     if (currentItem != item) {
-      newCart.concat(cart[i]);
+      newCart = newCart + (cart[i]);
     }
   }
   cart = newCart;

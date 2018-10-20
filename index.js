@@ -50,10 +50,10 @@ function removeFromCart(item) {
   for (var i = 0; i < cart.length; i ++){
     var currentItem = cart[i].itemName;
     if (currentItem != item) {
-      newCart = [...newCart,cart[i]]
+      newCart = [...newCart,cart[i]];
     }
   }
-  if (newCart === cart) {
+  if (newCart == cart) {
     return "That item is not in your cart.";
   } else {
   cart = newCart;

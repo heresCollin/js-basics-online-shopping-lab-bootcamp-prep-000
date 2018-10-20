@@ -53,7 +53,9 @@ function removeFromCart(item) {
       newCart = [...newCart,cart[i]]
     }
   }
-  if newCart === cart
+  if (newCart === cart) {
+    return 
+  }
   cart = newCart;
 }
 
